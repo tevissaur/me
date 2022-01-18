@@ -29,14 +29,14 @@ export default function Header(props) {
                 </div>
                 <div className="container justify-content-center col-12 col-lg-8" id="link-container">
 
-                    <Link to="tevissaur/bio" className="row align-content-center text-center rounded-circle circle mx-2" id="nav-circle-1">
+                    <Link to="bio" className="row align-content-center text-center rounded-circle circle mx-2" id="nav-circle-1">
                         <i className="bi-person-circle link-text"></i>
                     </Link>
-                    <Link to="tevissaur/works" className="row align-content-center text-center rounded-circle circle mx-2 m-0"
+                    <Link to="works" className="row align-content-center text-center rounded-circle circle mx-2 m-0"
                         id="nav-circle-2">
                         <i className="bi-folder-fill link-text"></i>
                     </Link>
-                    <Link to="tevissaur/contact-me" className="row align-content-center text-center rounded-circle circle mx-2 m-0 "
+                    <Link to="contact-me" className="row align-content-center text-center rounded-circle circle mx-2 m-0 "
                         id="nav-circle-3">
                         <i className="bi-envelope-open-fill link-text"></i>
                     </Link>
@@ -44,54 +44,6 @@ export default function Header(props) {
                 </div>
                 <div className="shape"></div>
             </nav>
-            <Routes >
-                <Route path="/tevissaur" element={<Bio />} >
-
-                    <Route path="works" element={<Works />} />
-                    <Route path="bio" element={<Bio />} />
-                    <Route path="contact-me" element={<Contact />} />
-                    <Route path="works/netflix-and-grill" element={
-                        <SingleWork
-                            title="Netflix and Grill"
-                            desc="A web app to help you choose your movie and meal for a pleasant evening"
-                            repoLink=""
-                            demoLink=""
-                            img="work-net-grill"
-                            authors={["Linh Bui", "Alexander Leino", "Tevis Reilly"]}
-                        />
-                    } />
-                    <Route path="works/tic-tac-toe" element={
-                        <SingleWork
-                            title="Tic Tac Toe"
-                            desc="The classic game that everyone loves"
-                            repoLink=""
-                            demoLink=""
-                            img="work-ttt"
-                            authors={["Tevis Reilly"]}
-                        />
-                    } />
-                    <Route path="works/forene-wiki" element={
-                        <SingleWork
-                            title="Forene Wiki"
-                            desc="A web based wiki of my own homebrew DnD world"
-                            repoLink=""
-                            demoLink=""
-                            img="work-forene"
-                            authors={["Tevis Reilly"]}
-                        />
-                    } />
-                    <Route path="works/chicken-run" element={
-                        <SingleWork
-                            title="Chicken Run"
-                            desc="This web application gives you all the tools you need to organize your own garden."
-                            repoLink=""
-                            demoLink=""
-                            img="work-chicken"
-                            authors={["Tevis Reilly", "Adam Olsey", "Travis Schram", "Max Parks"]}
-                        />
-                    } />
-                </Route>
-            </Routes>
             <Outlet />
         </>
     )
