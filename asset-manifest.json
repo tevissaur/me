@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tevissaur/bio/static/css/main.036b939a.chunk.css",
-    "main.js": "/tevissaur/bio/static/js/main.ff33ba06.chunk.js",
-    "main.js.map": "/tevissaur/bio/static/js/main.ff33ba06.chunk.js.map",
+    "main.js": "/tevissaur/bio/static/js/main.7436a782.chunk.js",
+    "main.js.map": "/tevissaur/bio/static/js/main.7436a782.chunk.js.map",
     "runtime-main.js": "/tevissaur/bio/static/js/runtime-main.9c1d4719.js",
     "runtime-main.js.map": "/tevissaur/bio/static/js/runtime-main.9c1d4719.js.map",
     "static/css/2.0a9ec390.chunk.css": "/tevissaur/bio/static/css/2.0a9ec390.chunk.css",
@@ -30,6 +30,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.20f845fe.chunk.js",
     "static/css/main.036b939a.chunk.css",
-    "static/js/main.ff33ba06.chunk.js"
+    "static/js/main.7436a782.chunk.js"
   ]
 }
