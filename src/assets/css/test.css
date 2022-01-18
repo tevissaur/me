@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+.body {
+  margin: 0;
+  font-family: "Gideon Roman", monospace;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myCarousel {
+  padding: 20px;
+  margin-bottom: 10vh;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myCarousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.myCarousel figure {
+  margin: 0;
+  width: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 50% 50% -482.84271px;
+          transform-origin: 50% 50% -482.84271px;
+}
+
+.myCarousel figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 26.66667px;
+  background-color: wheat;
+}
+
+.myCarousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform-origin: 50% 50% -482.84271px;
+          transform-origin: 50% 50% -482.84271px;
+}
+
+.myCarousel figure img:nth-child(2) {
+  -webkit-transform: rotateY(0.69813rad);
+          transform: rotateY(0.69813rad);
+}
+
+.myCarousel figure img:nth-child(3) {
+  -webkit-transform: rotateY(1.39626rad);
+          transform: rotateY(1.39626rad);
+}
+
+.myCarousel figure img:nth-child(4) {
+  -webkit-transform: rotateY(2.0944rad);
+          transform: rotateY(2.0944rad);
+}
+
+.myCarousel figure img:nth-child(5) {
+  -webkit-transform: rotateY(2.79253rad);
+          transform: rotateY(2.79253rad);
+}
+
+.myCarousel figure img:nth-child(6) {
+  -webkit-transform: rotateY(3.49066rad);
+          transform: rotateY(3.49066rad);
+}
+
+.myCarousel figure img:nth-child(7) {
+  -webkit-transform: rotateY(4.18879rad);
+          transform: rotateY(4.18879rad);
+}
+
+.myCarousel figure img:nth-child(8) {
+  -webkit-transform: rotateY(4.88692rad);
+          transform: rotateY(4.88692rad);
+}
+
+.myCarousel figure img:nth-child(9) {
+  -webkit-transform: rotateY(5.58505rad);
+          transform: rotateY(5.58505rad);
+}
+
+.myCarousel nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 0;
+}
+
+.myCarousel nav button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .myCarousel {
+    padding: 20px;
+    margin-bottom: 10vh;
+    -webkit-perspective: 2500px;
+            perspective: 2500px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .myCarousel > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  .myCarousel figure {
+    margin: 0;
+    width: 300px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform-origin: 50% 50% -482.84271px;
+            transform-origin: 50% 50% -482.84271px;
+  }
+  .myCarousel figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px 5px;
+    background-color: wheat;
+  }
+  .myCarousel figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform-origin: 50% 50% -482.84271px;
+            transform-origin: 50% 50% -482.84271px;
+  }
+  .myCarousel figure img:nth-child(2) {
+    -webkit-transform: rotateY(0.69813rad);
+            transform: rotateY(0.69813rad);
+  }
+  .myCarousel figure img:nth-child(3) {
+    -webkit-transform: rotateY(1.39626rad);
+            transform: rotateY(1.39626rad);
+  }
+  .myCarousel figure img:nth-child(4) {
+    -webkit-transform: rotateY(2.0944rad);
+            transform: rotateY(2.0944rad);
+  }
+  .myCarousel figure img:nth-child(5) {
+    -webkit-transform: rotateY(2.79253rad);
+            transform: rotateY(2.79253rad);
+  }
+  .myCarousel figure img:nth-child(6) {
+    -webkit-transform: rotateY(3.49066rad);
+            transform: rotateY(3.49066rad);
+  }
+  .myCarousel figure img:nth-child(7) {
+    -webkit-transform: rotateY(4.18879rad);
+            transform: rotateY(4.18879rad);
+  }
+  .myCarousel figure img:nth-child(8) {
+    -webkit-transform: rotateY(4.88692rad);
+            transform: rotateY(4.88692rad);
+  }
+  .myCarousel figure img:nth-child(9) {
+    -webkit-transform: rotateY(5.58505rad);
+            transform: rotateY(5.58505rad);
+  }
+  .myCarousel nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 0 0;
+  }
+  .myCarousel nav button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: 1px solid;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+  }
+}
+/*# sourceMappingURL=test.css.map */
