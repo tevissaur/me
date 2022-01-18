@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/tevissaur/bio/static/css/main.036b939a.chunk.css",
+    "main.js": "/tevissaur/bio/static/js/main.ff33ba06.chunk.js",
+    "main.js.map": "/tevissaur/bio/static/js/main.ff33ba06.chunk.js.map",
+    "runtime-main.js": "/tevissaur/bio/static/js/runtime-main.9c1d4719.js",
+    "runtime-main.js.map": "/tevissaur/bio/static/js/runtime-main.9c1d4719.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/tevissaur/bio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.20f845fe.chunk.js": "/tevissaur/bio/static/js/2.20f845fe.chunk.js",
+    "static/js/2.20f845fe.chunk.js.map": "/tevissaur/bio/static/js/2.20f845fe.chunk.js.map",
+    "static/js/3.c727b650.chunk.js": "/tevissaur/bio/static/js/3.c727b650.chunk.js",
+    "static/js/3.c727b650.chunk.js.map": "/tevissaur/bio/static/js/3.c727b650.chunk.js.map",
+    "index.html": "/tevissaur/bio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/tevissaur/bio/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.036b939a.chunk.css.map": "/tevissaur/bio/static/css/main.036b939a.chunk.css.map",
+    "static/js/2.20f845fe.chunk.js.LICENSE.txt": "/tevissaur/bio/static/js/2.20f845fe.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/tevissaur/bio/static/media/lion.0f3c391f.svg",
+    "static/media/Bootstrap_logo.3a162f65.svg": "/tevissaur/bio/static/media/Bootstrap_logo.3a162f65.svg",
+    "static/media/CSS3_logo.6ec1697a.svg": "/tevissaur/bio/static/media/CSS3_logo.6ec1697a.svg",
+    "static/media/HTML5_Badge.5804150e.svg": "/tevissaur/bio/static/media/HTML5_Badge.5804150e.svg",
+    "static/media/MySQL_textlogo.3961c579.svg": "/tevissaur/bio/static/media/MySQL_textlogo.3961c579.svg",
+    "static/media/Node.js_logo.dd47e26e.svg": "/tevissaur/bio/static/media/Node.js_logo.dd47e26e.svg",
+    "static/media/Python-logo-notext.063da199.svg": "/tevissaur/bio/static/media/Python-logo-notext.063da199.svg",
+    "static/media/React-icon.3adc4d15.svg": "/tevissaur/bio/static/media/React-icon.3adc4d15.svg",
+    "static/media/Sass_Logo_Color.540ec25f.svg": "/tevissaur/bio/static/media/Sass_Logo_Color.540ec25f.svg",
+    "static/media/js_logo.4bbcc6a1.svg": "/tevissaur/bio/static/media/js_logo.4bbcc6a1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c1d4719.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.20f845fe.chunk.js",
+    "static/css/main.036b939a.chunk.css",
+    "static/js/main.ff33ba06.chunk.js"
+  ]
+}
