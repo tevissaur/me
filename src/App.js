@@ -22,7 +22,7 @@ function App() {
         <main className=".body">
 
           <Routes >
-            <Route path="/react-portfolio" element={<Header />} >
+            <Route path="/" element={<Header />} >
 
               <Route path="works" element={<Works />} />
               <Route path="bio" element={<Bio />} />
