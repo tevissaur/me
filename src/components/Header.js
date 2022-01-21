@@ -29,14 +29,14 @@ export default function Header(props) {
                 </div>
                 <div className="container justify-content-center col-12 col-lg-8" id="link-container">
 
-                    <Link to="bio" className="row align-content-center text-center rounded-circle circle mx-2" id="nav-circle-1">
+                    <Link to="/bio" className="row align-content-center text-center rounded-circle circle mx-2" id="nav-circle-1">
                         <i className="bi-person-circle link-text"></i>
                     </Link>
-                    <Link to="works" className="row align-content-center text-center rounded-circle circle mx-2 m-0"
+                    <Link to="/works" className="row align-content-center text-center rounded-circle circle mx-2 m-0"
                         id="nav-circle-2">
                         <i className="bi-folder-fill link-text"></i>
                     </Link>
-                    <Link to="contact-me" className="row align-content-center text-center rounded-circle circle mx-2 m-0 "
+                    <Link to="/contact-me" className="row align-content-center text-center rounded-circle circle mx-2 m-0 "
                         id="nav-circle-3">
                         <i className="bi-envelope-open-fill link-text"></i>
                     </Link>
