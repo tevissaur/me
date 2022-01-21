@@ -1,9 +1,9 @@
-import { Outlet, Link, Routes, Route } from "react-router-dom";
-import { Bio, Works, Contact } from '../pages';
-import { SingleWork } from ".";
-import { useQuery } from '@apollo/client';
-import { useState, useEffect } from 'react'
-import { GET_PROJECTS } from '../utils/queries';
+import { Outlet, Link } from "react-router-dom";
+// import { Bio, Works, Contact } from '../pages';
+// import { SingleWork } from ".";
+// import { useQuery } from '@apollo/client';
+// import { useState, useEffect } from 'react'
+// import { GET_PROJECTS } from '../utils/queries';
 
 
 
