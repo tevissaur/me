@@ -1,9 +1,5 @@
-import { Outlet, Link } from "react-router-dom";
-// import { Bio, Works, Contact } from '../pages';
-// import { SingleWork } from ".";
-// import { useQuery } from '@apollo/client';
-// import { useState, useEffect } from 'react'
-// import { GET_PROJECTS } from '../utils/queries';
+import { Link } from "react-router-dom";
+import pdf from '../assets/Tevis-Reilly.pdf'
 
 
 
@@ -19,9 +15,9 @@ export default function Header(props) {
                     <a href="https://github.com/tevissaur" target="blank" className="rounded-circle circle mt-3 mb-2 bi-github"
                         id="nav-circle-git">
                     </a>
-                    <Link to="./assets.Tevis-Reilly.pdf" className="rounded-circle main-circle mt-3 mb-2" id="nav-circle-0">
+                    <a href={pdf} className="rounded-circle main-circle mt-3 mb-2" id="nav-circle-0">
 
-                    </Link>
+                    </a>
                     <a href="https://www.linkedin.com/in/tevis-r-34014147" target="blank"
                         className="rounded-circle circle mt-3 mb-2 bi-linkedin" id="nav-circle-linked">
                     </a>
@@ -44,7 +40,6 @@ export default function Header(props) {
                 </div>
                 <div className="shape"></div>
             </nav>
-            <Outlet />
         </>
     )
 }

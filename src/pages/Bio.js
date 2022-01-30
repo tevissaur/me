@@ -1,9 +1,8 @@
-import { Header, Skills } from "../components"
+import { Skills } from "../components"
 
 const Bio = (props) => {
     return (
         <>
-            <Header />
             <section className="container justify-content-center p-0 mt-5 m-auto" id="bio">
                 <div className="text-center m-auto col-12 row justify-content-center">
                     <h2 className="rounded-3 text-center col-10 col-md-4 col-lg-4 p-2 m-auto" id="bio-title">

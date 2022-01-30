@@ -1,10 +1,8 @@
-import { Header } from "../components";
 
 
 export default function Contact(props) {
     return (
         <>
-            <Header />
             <section className="container justify-content-center mt-5" id="contact">
                 <div className="text-center col-12 m-auto row justify-content-center">
                     <h4 className="rounded-3 text-center col-10 col-md-4 col-lg-4 p-2" id="contact-title">

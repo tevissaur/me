@@ -13,7 +13,6 @@ const SingleWork = ({ title, desc, authors, img, repoLink, demoLink }) => {
 
     return (
         <>
-            <Header />
             <section className="container justify-content-center p-0 mt-5">
                 <div className="text-center col-12 row justify-content-center m-auto">
                     <h2 className="rounded-3 text-center col-9 col-md-6 col-lg-4 p-2" id="work-title">

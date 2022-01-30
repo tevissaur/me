@@ -1,6 +1,5 @@
 
 import { Link } from 'react-router-dom'
-import { Header } from '../components'
 
 
 
@@ -10,7 +9,6 @@ export default function Works(props) {
 
     return (
         <>
-            <Header />
             <section className="container justify-content-center p-0 mt-5" id="work">
                 <div className="text-center col-12 row justify-content-center m-auto">
                     <h3 className="rounded-3 col-10 col-md-4 col-lg-4 p-2" id="work-title">
