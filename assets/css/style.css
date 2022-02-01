@@ -15,6 +15,7 @@
     --rufous: #ae2012ff;
     --ruby-red: #9b2226ff;
     --content-background-color: rgb(189, 193, 140);
+    --content-background-color-dark: rgb(136, 139, 101);
 }
 
 * {
@@ -164,9 +165,15 @@ main {
 #email {
     position: relative;
     border: 2px solid black;
+    color: black;
     background-color: var(--content-background-color);
     margin: 0;
     font-size: 1.8rem;
+    text-decoration: none;
+}
+
+#email:hover {
+    background-color: var(--content-background-color-dark);
 }
 
 #email::after {
@@ -353,6 +360,10 @@ a.repo:hover, a.demo:hover {
     background-position: center;
     background-size: cover;
     background-color: black;
+}
+
+.solo-work-desc {
+    font-size: 5rem;
 }
 
 #work-forene {
