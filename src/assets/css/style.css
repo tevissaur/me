@@ -15,6 +15,7 @@
     --rufous: #ae2012ff;
     --ruby-red: #9b2226ff;
     --content-background-color: rgb(189, 193, 140);
+    --content-background-color-dark: rgb(115, 117, 84);
 }
 
 * {
@@ -56,6 +57,24 @@ body {
     content: '';
     bottom: 10px;
     background: radial-gradient(var(--gamboge), var(--alloy-orange), var(--rufous), var(--ruby-red));
+}
+.shape-background {
+    position: absolute;
+    overflow: hidden;
+    height: 480px;
+    width: 100%;
+}
+
+.shape-background::after {
+    border-radius: 100%;
+    position: absolute;
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    content: '';
+    bottom: 10px;
+    background: url(../images/header-background.jpg);
+    opacity: 0.3;
 }
 
 .main-circle {
@@ -157,6 +176,7 @@ body {
     background-color: var(--content-background-color);
     margin: 0;
     font-size: 3.5rem;
+    transition: all 0.3s;
 }
 
 #email {
@@ -165,6 +185,7 @@ body {
     background-color: var(--content-background-color);
     margin: 0;
     font-size: 1.8rem;
+    transition: all 0.3s;
 }
 
 #email::after {
@@ -175,6 +196,9 @@ body {
     position: absolute;
     top: 101%;
     width: 1px;
+}
+#email:hover {
+    background-color: var(--content-background-color-dark);
 }
 
 #bio-title::after {
@@ -497,6 +521,9 @@ body {
 
     #nav-circle-git, #nav-circle-linked {
         display: none;
+    }
+    .solo-work-desc {
+        font-size: 1.5rem;
     }
 }
 

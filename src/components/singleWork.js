@@ -1,15 +1,12 @@
 import cssLogo from '../assets/images/CSS3_logo.svg'
 import htmlLogo from '../assets/images/HTML5_Badge.svg'
-import bootstrapLogo from '../assets/images/Bootstrap_logo.svg';
 import nodeLogo from '../assets/images/Node.js_logo.svg';
 import sassLogo from '../assets/images/Sass_Logo_Color.svg'
 import jsLogo from '../assets/images/js_logo.svg'
-import pyLogo from "../assets/images/Python-logo-notext.svg"
-import mysqlLogo from "../assets/images/MySQL_textlogo.svg"
 import reactLogo from "../assets/images/React-icon.svg"
-import { Header } from '.';
 
 const SingleWork = ({ title, desc, authors, img, repoLink, demoLink }) => {
+
 
     return (
         <>
@@ -21,7 +18,7 @@ const SingleWork = ({ title, desc, authors, img, repoLink, demoLink }) => {
                 </div>
                 <div className="row flex-lg-column m-auto col-12 p-0 justify-content-center">
                     <div className="col-11 d-flex col-lg-10 rounded-3 p-3 my-4 solo-work-desc m-auto">
-                        <div className="col-12 p-2">
+                        <div className="col-12 p-2 ">
                             {desc}
                         </div>
                     </div>
@@ -33,13 +30,11 @@ const SingleWork = ({ title, desc, authors, img, repoLink, demoLink }) => {
                         })}
 
                     </div>
-                    <div className="d-flex col-10 col-md-9 col-lg-6 p-2 mt-4 flex-wrap solo-work-author rounded-3">
+                    <div className="d-flex col-10 col-md-9 col-lg-6 p-2 mt-4 px-4 flex-wrap solo-work-author rounded-3">
                         <img className='col-2' src={cssLogo} alt="" />
                         <img className='col-2' src={htmlLogo} alt="" />
-                        <img className='col-2' src={sassLogo} alt="" />
                         <img className='col-2' src={nodeLogo} alt="" />
                         <img className='col-2' src={jsLogo} alt="" />
-                        <img className='col-2' src={reactLogo} alt="" />
                     </div>
                     <div className="rounded-circle solo-work-image col-12" id={img}>
 
