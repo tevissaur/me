@@ -15,7 +15,6 @@
     --rufous: #ae2012ff;
     --ruby-red: #9b2226ff;
     --content-background-color: rgb(189, 193, 140);
-    --content-background-color-dark: rgb(136, 139, 101);
 }
 
 * {
@@ -37,12 +36,9 @@ body {
     /* background-image: url('../images/pexels-bruno-scramgnon-585759.jpg'); */
     /* background-position: top; */
     background-size: cover;
-    background: linear-gradient(var(--gamboge), var(--peach-orange),var(--beau-blue), var(--celadon-blue));
+    background: linear-gradient(var(--gamboge), var(--peach-orange), var(--beau-blue), var(--celadon-blue));
 }
 
-main {
-    margin-top: 10vh!important;
-}
 
 .shape {
     position: absolute;
@@ -71,7 +67,7 @@ main {
     background-size: cover;
     box-shadow: 0px 0px 100px var(--gamboge), 50px 50px 150px var(--peach-orange), -50px 50px 150px var(--peach-orange);
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .circle {
@@ -90,7 +86,7 @@ main {
     font-weight: bold;
     font-size: 1.2rem;
     z-index: 1;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 #link-container {
@@ -111,7 +107,7 @@ main {
 }
 
 .circle:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     z-index: 999;
     color: black;
 }
@@ -139,7 +135,7 @@ main {
 }
 
 
-#socials > a, #socials > button {
+#socials>a, #socials>button {
     width: 60px;
     height: 60px;
     border: 2px solid black;
@@ -151,7 +147,7 @@ main {
     justify-content: center;
 }
 
-#socials-git:hover, #socials-pdf:hover , #socials-linked:hover, #socials-reveal:hover {
+#socials-git:hover, #socials-pdf:hover, #socials-linked:hover, #socials-reveal:hover {
     color: var(--medium-champagne);
 }
 
@@ -162,18 +158,13 @@ main {
     margin: 0;
     font-size: 3.5rem;
 }
+
 #email {
     position: relative;
     border: 2px solid black;
-    color: black;
     background-color: var(--content-background-color);
     margin: 0;
     font-size: 1.8rem;
-    text-decoration: none;
-}
-
-#email:hover {
-    background-color: var(--content-background-color-dark);
 }
 
 #email::after {
@@ -195,6 +186,7 @@ main {
     top: 101%;
     width: 1px;
 }
+
 #skills-title::after {
     content: '';
     background: black;
@@ -267,14 +259,90 @@ main {
     position: relative;
 }
 
+.solo-work-image {
+    text-decoration: none;
+    border: 2px solid black;
+    width: 350px!important;
+    height: 350px!important;
+    overflow: hidden;
+    vertical-align: middle;
+    z-index: 999;
+    margin: 2rem auto 5% auto!important;
+}
+
+.solo-work-desc {
+    border: 2px solid black;
+    text-align: center;
+    margin: 38px auto 0 auto;
+    min-height: 200px;
+    font-size: 2rem;
+    background-color: var(--content-background-color);
+    position: relative;
+}
+
+.solo-work-skills {
+    border: 2px solid black;
+    text-align: center;
+    margin: 38px auto 0 auto;
+    min-height: 200px;
+    font-size: 2rem;
+    background-color: var(--content-background-color);
+    position: relative;
+}
+
+.solo-work-author {
+    border: 2px solid black;
+    text-align: center;
+    margin: 38px auto 0 auto;
+    font-size: 2rem;
+    background-color: var(--content-background-color);
+    position: relative;
+}
+
+.solo-work-skills::after {
+    content: '';
+    background: black;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 101%;
+    width: 1px;
+    transition: all 1s;
+}
+.solo-work-author::after {
+    content: '';
+    background: black;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 101%;
+    width: 1px;
+    transition: all 1s;
+}
+.solo-work-desc::after {
+    content: '';
+    background: black;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 101%;
+    width: 1px;
+    transition: all 1s;
+}
+
 .work-content, .work-content-last {
+    text-decoration: none;
     border: 2px solid black;
     position: relative;
-    width: 300px!important;
+    width: 300px;
     height: 300px;
-    margin: 5rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     overflow: hidden;
     transition: all 0.5s;
+    vertical-align: middle;
+}
+.work-content-last {
+    margin-bottom: 5%;
 }
 
 .work-content:hover, .work-content-last:hover {
@@ -282,57 +350,26 @@ main {
     transform: scale(1.1);
 }
 
-.work-content a.repo, .work-content-last a.repo{
-    position: absolute;
-    left: 0;
+.work-content div, .work-content-last div {
     width: 100%;
-    height: 0;
-    font-size: 0rem;
+    height: 100%;
+    opacity: 0;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
+    padding: 30% 20%;
     color: black;
     transition: all 0.5s;
 }
-.work-content a.demo, .work-content-last a.demo{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    font-weight: bold;
 
-    font-size: 0rem;
-    text-decoration: none;
-    color: black;
-    transition: all 0.5s;
-}
-.work-content:hover a.repo, .work-content-last:hover a.repo{
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
+.work-content:hover div, .work-content-last:hover div {
     font-size: 2rem;
+    opacity: 1;
     width: 100%;
-    height: 50%;
-    background-color: rgba(233, 216, 166, 0.7);
-}
-.work-content:hover a.demo, .work-content-last:hover a.demo{
-    display: flex;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    font-size: 2rem;
-    width: 100%;
-    height: 50%;
-    background-color: rgba(238, 155, 0, 0.7);
-}
-a.repo span, a.demo span {
-    margin: auto;
+    height: 100%;
+    background-color: rgba(155, 34, 38, 0.616);
 }
 
-a.repo:hover, a.demo:hover {
-    text-shadow: 0px 0px 10px var(--ruby-red);
-}
 .work-content::after {
     content: '';
     background: black;
@@ -362,10 +399,6 @@ a.repo:hover, a.demo:hover {
     background-color: black;
 }
 
-.solo-work-desc {
-    font-size: 5rem;
-}
-
 #work-forene {
     background-image: url('../images/Forene.jpg');
     background-position: center;
@@ -377,11 +410,11 @@ a.repo:hover, a.demo:hover {
     background-position: center;
     background-size: cover;
 }
+
 #work-chicken {
     background-image: url('../images/garden-square1.jpg');
     background-position: top left;
     background-size: cover;
-    margin: 2rem auto 3rem auto;
 }
 
 .work-row-two::before {
@@ -394,6 +427,7 @@ a.repo:hover, a.demo:hover {
     width: 1px;
     transition: all 1s;
 }
+
 #nav-circle-git, #nav-circle-linked {
     width: 150px;
     height: 150px;
@@ -404,6 +438,7 @@ a.repo:hover, a.demo:hover {
     background-color: var(--gamboge);
     box-shadow: 0px 0px 100px var(--gamboge);
 }
+
 #nav-circle-git>i, #nav-circle-linked>i {
     margin: auto auto;
 }
@@ -412,6 +447,7 @@ a.repo:hover, a.demo:hover {
     .work-content::after {
         display: none;
     }
+
     #work-shape {
         width: 70%;
         height: 1px;
@@ -427,6 +463,7 @@ a.repo:hover, a.demo:hover {
     .work-content::after {
         display: none;
     }
+
     #work-shape {
         width: 1px;
         height: 100%;
@@ -435,23 +472,29 @@ a.repo:hover, a.demo:hover {
         padding: 0;
         background: black;
     }
+
     #bio-title, #work-title, #contact-title, #skills-title {
         font-size: 2.5rem;
     }
-    #email  {
+
+    #email {
         font-size: 1.25rem;
     }
+
     #bio-pic {
         position: relative;
         width: 350px;
         height: 350px;
     }
+
     #bio-content {
         font-size: 1.5rem;
     }
+
     #link-container {
         gap: 0;
     }
+
     #nav-circle-git, #nav-circle-linked {
         display: none;
     }
@@ -469,13 +512,16 @@ a.repo:hover, a.demo:hover {
         width: 400px;
         height: 400px;
     }
+
     .shape {
         height: 700px;
     }
+
     #bio-pic {
         width: 500px;
         height: 500px;
     }
+
     .work-content, .work-content-last {
         width: 500px;
         height: 500px;
@@ -483,7 +529,7 @@ a.repo:hover, a.demo:hover {
 }
 
 @media screen and (min-width: 769px) {
-    #nav-circle-1, #nav-circle-2, #nav-circle-3{
+    #nav-circle-1, #nav-circle-2, #nav-circle-3 {
         /* display: none; */
     }
 }
