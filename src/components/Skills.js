@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import cssLogo from '../assets/images/CSS3_logo.svg'
-import htmlLogo  from '../assets/images/HTML5_Badge.svg'
+import htmlLogo from '../assets/images/HTML5_Badge.svg'
 import bootstrapLogo from '../assets/images/Bootstrap_logo.svg';
 import nodeLogo from '../assets/images/Node.js_logo.svg';
 import sassLogo from '../assets/images/Sass_Logo_Color.svg'
@@ -33,7 +33,7 @@ const Skills = () => {
             setCurrentImage(currentImage => currentImage - 1);
         }
     }
-    
+
     useEffect(() => {
         setStyles({
             figureStyles: {
@@ -50,7 +50,7 @@ const Skills = () => {
                 <h2 className="rounded-3 text-center col-10 col-md-4 col-lg-4 p-2 my-5" id="skills-title">
                     tech i use
                 </h2>
-                <figure style={ styles.figureStyles } onChange={setStyles}>
+                <figure style={styles.figureStyles} onChange={setStyles}>
                     <img src={cssLogo} alt="" />
                     <img src={htmlLogo} alt="" />
                     <img src={bootstrapLogo} alt="" />
@@ -63,8 +63,8 @@ const Skills = () => {
 
                 </figure>
                 <nav>
-                    <button className="nav prev" onClick={ handleRotate }>Prev</button>
-                    <button className="nav next" onClick={ handleRotate }>Next</button>
+                    <button className="nav prev" onClick={handleRotate}>Prev</button>
+                    <button className="nav next" onClick={handleRotate}>Next</button>
                 </nav>
             </div>
 

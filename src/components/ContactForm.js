@@ -7,7 +7,7 @@ const ContactForm = (props) => {
         <section className="container justify-content-center mt-5" id="contact">
 
             <div className="text-center col-12 m-auto row justify-content-center">
-                <h4 className="rounded-3 text-center col-9 col-md-8 col-lg-7 col-xl-8  p-2" id="contact-title">
+                <h4 className="rounded-3 text-center col-8 col-md-8 col-lg-7 col-xl-8  p-2" id="contact-title">
                     contact me
                 </h4>
 

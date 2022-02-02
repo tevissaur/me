@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import resume from '../assets/Resume.docx'
+import resume from '../assets/Resume.docx.pdf'
 import background from '../assets/images/header-background.jpg'
 
 

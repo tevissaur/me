@@ -4,6 +4,7 @@ import nodeLogo from '../assets/images/Node.js_logo.svg';
 import sassLogo from '../assets/images/Sass_Logo_Color.svg'
 import jsLogo from '../assets/images/js_logo.svg'
 import reactLogo from "../assets/images/React-icon.svg"
+import { Link } from 'react-router-dom';
 
 const SingleWork = ({ title, desc, authors, img, repoLink, demoLink }) => {
 
@@ -37,6 +38,16 @@ const SingleWork = ({ title, desc, authors, img, repoLink, demoLink }) => {
                         <img className='col-2' src={jsLogo} alt="" />
                     </div>
                     <div className="rounded-circle solo-work-image col-12" id={img}>
+                        <a href={demoLink} target='_blank' rel='noreferrer'>
+                            <div id='demo-link'>
+                                To Demo
+                            </div>
+                        </a>
+                        <a href={repoLink} target='_blank' rel='noreferrer'>
+                            <div id='repo-link'>
+                                To Repo
+                            </div>
+                        </a>
 
                     </div>
 
