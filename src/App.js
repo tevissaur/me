@@ -1,8 +1,6 @@
 import { SingleWork } from './components'
 import { Works, Bio, Contact } from './pages'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
-import './assets/css/style.css';
-import './assets/css/test.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './pages/Layout';
 
@@ -75,7 +73,7 @@ function App() {
                   desc="This web application gives you all the tools you need to organize your own garden. "
                   repoLink="https://github.com/tevissaur/your-local-farmers"
                   demoLink="https://your-local-farmers.herokuapp.com/"
-                  img="work-farmers"
+                  img="work-farmer"
                   authors={["Tevis Reilly", "Alexander Leino", "Linh Bui", "Quentin Hnilica"]}
                 />
               } />

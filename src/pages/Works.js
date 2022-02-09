@@ -1,14 +1,19 @@
-
 import { Link } from 'react-router-dom'
-
+import { Fade } from 'react-bootstrap'
+import { useState, useEffect } from 'react'
 
 
 export default function Works(props) {
 
+    const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        setOpen(!open)
+    }, [])
 
 
     return (
-        <>
+        <Fade in={open}>
             <section className="container justify-content-center p-0 mt-5" id="work">
                 <div className="text-center col-12 row justify-content-center m-auto">
                     <h3 className="rounded-3 col-10 col-md-4 col-lg-4 p-2" id="work-title">
@@ -16,7 +21,7 @@ export default function Works(props) {
                     </h3>
                 </div>
                 <div className="d-flex flex-lg-row flex-column work-container text-center">
-                    <div className="position-absolute" id="work-shape">
+                    <div className="position-absolute d-lg-flex d-none" id="work-shape">
                     </div>
                     <Link to="netflix-and-grill" className="rounded-circle work-content" id="work-net-grill">
 
@@ -33,7 +38,7 @@ export default function Works(props) {
                     </Link>
                 </div>
                 <div className="d-flex flex-lg-row flex-column work-container work-row-two text-center">
-                    <div className="position-absolute" id="work-shape">
+                    <div className="position-absolute d-lg-flex d-none" id="work-shape">
                     </div>
                     <Link to="chicken-run" className="rounded-circle work-content" id="work-chicken">
 
@@ -45,6 +50,6 @@ export default function Works(props) {
                     </Link>
                 </div>
             </section >
-        </>
+        </Fade>
     )
 }

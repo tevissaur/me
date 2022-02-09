@@ -1,13 +1,16 @@
 
-import { Container } from 'react-bootstrap'
+import { Container, Stack } from 'react-bootstrap'
 
 const Footer = () => {
 
 
     return (
-        <Container margin={5}>
-            words
-        </Container>
+        <p margin='20px auto' style={{
+            textAlign: 'center',
+            fontSize: '16px'
+        }}>
+            Made with React
+        </p>
     )
 }
 
